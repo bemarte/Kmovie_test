@@ -1,0 +1,27 @@
+<resources>
+
+    <!--error message-->
+    <string name="no_internet_connection">Sem conexão com a internet</string>
+    <string name="connect_timeout">Tempo limite atingido</string>
+    <string name="force_update_app">Por favor, atualize seu app</string>
+    <string name="server_maintain_message">Servidor me manutenção</string>
+    <string name="unknown_error">Erro, por favor, tente novamente</string>
+
+    <!--main screen-->
+    <string name="main_tab_popular">Populares</string>
+    <string name="main_tab_top_rated">MELHORES AVALIADOS</string>
+    <string name="main_tab_favorite">Favoritos</string>
+    <string name="main_tab_profile">PERFIL</string>
+    <string name="main_tab_tv">TV</string>
+
+    <!--login-->
+    <string name="login_email">Email</string>
+    <string name="login_password">Senha</string>
+    <string name="login_button_login">Login</string>
+
+    <string name="ok">OK</string>
+    <string name="summary">Sinopse</string>
+    <string name="spashlogo">Splash Logo</string>
+    <string name="cinemapp">CINEMAPP</string>
+
+</resources>
