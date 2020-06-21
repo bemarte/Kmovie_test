@@ -1,6 +1,9 @@
 package com.example.moviedb
 
 import android.app.Application
+import android.content.Intent
+import android.view.Menu
+import android.view.MenuItem
 import androidx.multidex.MultiDex
 import com.example.moviedb.di.appModules
 import org.koin.android.ext.koin.androidContext

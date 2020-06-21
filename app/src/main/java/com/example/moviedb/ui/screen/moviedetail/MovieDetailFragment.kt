@@ -1,6 +1,11 @@
 package com.example.moviedb.ui.screen.moviedetail
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Gravity.apply
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
 import androidx.lifecycle.Observer
@@ -71,5 +76,25 @@ class MovieDetailFragment : BaseFragment<FragmentMovieDetailBinding, MovieDetail
                 imageView to imageUrl
             )
         )
+    }
+
+    //funcao sample - android
+    override fun onOptionsItemSelected(item:MenuItem):Boolean{
+        if(item.itemId == R.id.fabShare){
+            val sendIntent: Intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, "This is my text to send.")
+                type = "text/plain"
+            }
+
+            val shareIntent = Intent.createChooser(sendIntent, null)
+            startActivity(shareIntent)
+        }
+        return true
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.)
+        return true
     }
 }

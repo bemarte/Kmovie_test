@@ -2,6 +2,7 @@ package com.example.moviedb.ui.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
@@ -176,4 +177,5 @@ abstract class BaseFragment<ViewBinding : ViewDataBinding, ViewModel : BaseViewM
         parentFragment.childFragmentManager.popBackStack()
     }
 
+    abstract fun onCreateOptionsMenu(menu: Menu): Boolean
 }
